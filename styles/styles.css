@@ -1,0 +1,165 @@
+* {
+    font-family: verdana, tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(pretendo-webfont.ttf)
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+header {
+    background: url(../images/amiibo-cover-broad.png);
+    height: 195px;
+}
+
+header h1 {
+    margin: 0;
+    color: #E60012;
+    text-align: center;
+    font-size: 85px;
+    padding-top: 55px;
+    font-family: myFont;
+}
+
+body {
+    background: url(../images/Nintendo-Character-Background.png);
+}
+
+#status {
+    font-style: italic;
+    height: 32px;
+}
+
+#content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 230px));
+    grid-gap: 10px;
+}
+
+.searcher {
+    text-align: center;
+    /* border: 1px solid gray; */
+}
+
+p {
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    background: url(../images/Nintendo-Red-Background.png);
+}
+
+.result img {
+    width: 100%;
+}
+
+.result span {
+    order: -1;
+}
+
+button {
+    background-color: #E60012;
+    border: none;
+    color: white;
+    padding: 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.8;
+    transition: all 0.3s;
+    width: 200px;
+}
+
+button:hover {
+    background: #ff3041;
+    opacity: 1;
+}
+
+button:active {
+    background: #c2000f;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+}
+
+button:focus {
+    outline: 0;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\21bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.widgets {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.widgets-sorter {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #999999;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ff3041;
+}
+
+.navbar a:active {
+    background-color: #c2000f;
+}
+
+
+/* .navbar a.active {
+    background-color: #c2000f;
+} */

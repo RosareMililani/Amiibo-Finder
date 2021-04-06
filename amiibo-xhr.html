@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Amiibo Finder</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Amiibo Finder</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="amiibo-xhr.html">Search by Characters</a>
+        <a href="amiibo-xhr-gameseries.html">Search by Game Series</a>
+        <a href="documentation.html">Documentation</a>
+    </div>
+
+    <div class="all-widgets">
+        <div class="widgets">
+            <p>Search Character: <input id="searchterm" type="text" size="20" maxlength="20" autofocus
+                    value="Tom Nook" /></p>
+        </div>
+
+        <div class="widgets">
+            Search by Card Type:
+            <select id="type">
+                <option value="card" selected>card</option>
+                <option value="figure">figure</option>
+                <option value="yarn">yarn</option>
+            </select>
+        </div>
+
+        <div class="widgets">
+            Sort by:
+            <select id="sort">
+                <option value="None" selected>None</option>
+                <option value="A -> Z">A -> Z</option>
+            </select>
+        </div>
+
+        <p><button type="button" id="search"><span>Search!</span></button></p>
+        <p id="debug"></p>
+        <hr>
+        <h2>Your Character Search Result(s)...</h2>
+        
+        <p id="debug"></p>
+    </div>
+
+    <div id="content">
+        <p>No data yet!</p>
+    </div>
+
+</body>
+
+</html>
